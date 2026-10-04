@@ -1,0 +1,26 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { overflow-x: hidden; }
+body { font-family: -apple-system, "Hiragino Sans", "PingFang SC", system-ui, sans-serif; background: var(--bg, #f4f4f6); color: #1c1c1e; -webkit-text-size-adjust: 100%; }
+.bar { position: sticky; top: 0; z-index: 2; padding: 14px 18px; background: var(--brand); color: #fff; display: flex; align-items: center; gap: 12px; }
+.bar .logo { width: 34px; height: 34px; border-radius: 10px; background: rgba(255,255,255,.22); display: grid; place-items: center; font-weight: 800; font-size: 18px; }
+.bar h1 { font-size: 20px; font-weight: 700; }
+.bar small { display: block; font-size: 13px; opacity: .85; font-weight: 500; }
+.wrap { padding: 16px; display: grid; gap: 14px; }
+.card { background: #fff; border-radius: 16px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+.card h2 { font-size: 18px; margin-bottom: 6px; }
+.card p { font-size: 15px; line-height: 1.45; color: #48484a; }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.row + .row { margin-top: 12px; padding-top: 12px; border-top: 1px solid #ececf0; }
+.item { font-size: 16px; font-weight: 600; }
+.desc { font-size: 14px; color: #6e6e73; margin-top: 2px; line-height: 1.35; }
+.price { font-size: 16px; font-weight: 700; white-space: nowrap; }
+.pill { display: inline-block; font-size: 13px; font-weight: 600; padding: 5px 10px; border-radius: 99px; background: var(--soft); color: var(--brand); margin: 0 6px 6px 0; }
+.btn { display: block; text-align: center; font-size: 17px; font-weight: 700; color: #fff; background: var(--brand); padding: 15px; border-radius: 14px; }
+.tile { width: 52px; height: 52px; border-radius: 12px; background: var(--soft); display: grid; place-items: center; font-size: 26px; flex: none; }
+.big { font-size: 30px; font-weight: 800; }
+.muted { color: #8e8e93; font-size: 13px; }
+.tabs { display: flex; gap: 8px; overflow-x: auto; padding: 0 16px; margin-top: 12px; }
+.tabs span { flex: none; font-size: 15px; font-weight: 600; padding: 8px 14px; border-radius: 99px; background: #fff; }
+.tabs span:first-child { background: var(--brand); color: #fff; }
+.warn { border-left: 4px solid var(--brand); }
+footer { text-align: center; font-size: 12px; color: #aeaeb2; padding: 24px 16px 40px; }
