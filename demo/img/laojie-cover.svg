@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" font-family="PingFang SC, Hiragino Sans GB, Heiti SC, sans-serif">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb347"/><stop offset="1" stop-color="#e2620d"/></linearGradient>
+<radialGradient id="broth" cx=".5" cy=".45" r=".6"><stop offset="0" stop-color="#e0682a"/><stop offset="1" stop-color="#a8360f"/></radialGradient>
+</defs>
+<rect width="720" height="380" fill="url(#bg)"/>
+<g fill="#fff" opacity=".08"><circle cx="90" cy="60" r="110"/><circle cx="700" cy="360" r="140"/></g>
+<!-- lanterns -->
+<g><line x1="130" y1="0" x2="130" y2="40" stroke="#5b1a06" stroke-width="3"/><ellipse cx="130" cy="78" rx="34" ry="40" fill="#d7261e"/><rect x="116" y="34" width="28" height="8" fill="#f6c343"/><rect x="116" y="114" width="28" height="8" fill="#f6c343"/><text x="130" y="88" text-anchor="middle" font-size="28" font-weight="700" fill="#f6c343">福</text></g>
+<g><line x1="480" y1="0" x2="480" y2="26" stroke="#5b1a06" stroke-width="3"/><ellipse cx="480" cy="62" rx="30" ry="36" fill="#d7261e"/><rect x="467" y="22" width="26" height="8" fill="#f6c343"/><rect x="467" y="94" width="26" height="8" fill="#f6c343"/><text x="480" y="71" text-anchor="middle" font-size="24" font-weight="700" fill="#f6c343">面</text></g>
+<!-- bowl -->
+<ellipse cx="360" cy="330" rx="200" ry="26" fill="#000" opacity=".2"/>
+<path d="M170 210 h380 a190 120 0 0 1 -380 0z" fill="#fbf4e6"/>
+<path d="M190 250 h340" stroke="#c0392b" stroke-width="8" stroke-dasharray="18 10"/>
+<ellipse cx="360" cy="210" rx="190" ry="40" fill="#fbf4e6"/>
+<ellipse cx="360" cy="212" rx="170" ry="30" fill="url(#broth)"/>
+<g fill="none" stroke="#f7d98b" stroke-width="5" stroke-linecap="round"><path d="M230 214 q40 -18 80 0 t80 0 t70 -4"/><path d="M250 224 q40 -14 80 0 t80 0 t60 -6"/><path d="M240 204 q40 -16 80 0 t80 0 t70 0"/></g>
+<g fill="#7b3b1c"><rect x="300" y="190" width="54" height="22" rx="8" transform="rotate(-8 327 201)"/><rect x="370" y="196" width="54" height="22" rx="8" transform="rotate(6 397 207)"/></g>
+<g fill="#4caf50"><circle cx="280" cy="200" r="7"/><circle cx="292" cy="210" r="6"/><circle cx="440" cy="206" r="7"/><circle cx="452" cy="196" r="6"/></g>
+<g stroke="#5b2f12" stroke-width="10" stroke-linecap="round"><line x1="420" y1="200" x2="610" y2="70"/><line x1="440" y1="208" x2="630" y2="90"/></g>
+<g fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".6"><path d="M300 160 q-14 -20 0 -40 q14 -20 0 -40"/><path d="M360 150 q-14 -20 0 -40 q14 -20 0 -40"/></g>
+<!-- sign -->
+<g transform="translate(200 40)"><rect width="120" height="54" rx="10" fill="#5b1a06"/><text x="60" y="37" text-anchor="middle" font-size="26" font-weight="700" fill="#f6c343">手工拉面</text></g>
+<g transform="translate(470 120)"><rect width="150" height="44" rx="22" fill="#fff"/><text x="75" y="30" text-anchor="middle" font-size="20" font-weight="700" fill="#e2620d">骨汤慢炖6小时</text></g>
+</svg>

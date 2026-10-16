@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" font-family="Hiragino Mincho ProN, Yu Mincho, serif">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7ead8"/><stop offset="1" stop-color="#e9cfae"/></linearGradient>
+<g id="leaf"><path d="M0 -30 L8 -10 L28 -14 L16 2 L26 18 L6 12 L0 30 L-6 12 L-26 18 L-16 2 L-28 -14 L-8 -10z"/></g></defs>
+<rect width="720" height="320" fill="url(#bg)"/>
+<circle cx="560" cy="170" r="120" fill="#fff" opacity=".5"/>
+<use href="#leaf" fill="#c8402f" transform="translate(620 60) rotate(20) scale(1.4)"/>
+<use href="#leaf" fill="#e08a2c" transform="translate(470 70) rotate(-25)"/>
+<use href="#leaf" fill="#d9632b" transform="translate(680 240) rotate(40) scale(1.1)"/>
+<use href="#leaf" fill="#b5322a" transform="translate(420 270) rotate(-60) scale(.8)"/>
+<use href="#leaf" fill="#e8a33a" transform="translate(360 40) rotate(15) scale(.7)"/>
+<!-- cup -->
+<g transform="translate(560 210)"><ellipse cx="0" cy="62" rx="74" ry="12" fill="#000" opacity=".12"/><path d="M-62 -40 h124 l-12 96 a14 14 0 0 1 -14 12 h-72 a14 14 0 0 1 -14 -12z" fill="#5d6f5a"/><path d="M-62 -40 h124 l-3 22 h-118z" fill="#8a9b86"/><ellipse cx="0" cy="-40" rx="62" ry="12" fill="#3f4d3d"/><ellipse cx="0" cy="-40" rx="52" ry="8" fill="#9bbf3a"/><g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".8"><path d="M-14 -62 q-10 -14 0 -28 q10 -14 0 -28"/><path d="M16 -62 q-10 -14 0 -28 q10 -14 0 -28"/></g></g>
+<text x="40" y="70" font-size="22" fill="#7a5c3e" letter-spacing="4">こもれび雑貨</text>
+<text x="40" y="140" font-size="54" font-weight="700" fill="#3d2b1c">秋の感謝セール</text>
+<text x="40" y="222" font-size="28" fill="#3d2b1c">最大</text><text x="100" y="226" font-size="72" font-weight="800" fill="#c8402f" font-family="-apple-system, Helvetica Neue, sans-serif">30<tspan font-size="40">%OFF</tspan></text>
+<rect x="40" y="252" width="230" height="40" rx="20" fill="#3d2b1c"/>
+<text x="155" y="279" text-anchor="middle" font-size="19" fill="#fff" font-family="Hiragino Sans, sans-serif">10月15日(水)まで</text>
+</svg>

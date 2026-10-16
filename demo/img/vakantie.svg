@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" font-family="-apple-system, Helvetica Neue, Arial, sans-serif">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd3e6"/><stop offset="1" stop-color="#d9f3f0"/></linearGradient></defs>
+<rect width="720" height="260" fill="url(#sky)"/>
+<circle cx="600" cy="70" r="38" fill="#ffd45a"/>
+<path d="M0 170 Q180 150 360 168 T720 160 V260 H0z" fill="#2aa6b8"/>
+<path d="M0 205 Q200 185 420 205 T720 200 V260 H0z" fill="#f4dca5"/>
+<g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".7"><path d="M80 182 q12 -6 24 0"/><path d="M260 176 q12 -6 24 0"/><path d="M500 172 q12 -6 24 0"/></g>
+<!-- palm -->
+<path d="M560 230 Q570 160 545 105" fill="none" stroke="#8a5a2b" stroke-width="12" stroke-linecap="round"/>
+<g fill="#2e9b5a"><path d="M545 105 q-50 -30 -95 -5 q50 -5 95 5z"/><path d="M545 105 q-20 -50 -70 -55 q40 25 70 55z"/><path d="M545 105 q30 -45 80 -35 q-45 5 -80 35z"/><path d="M545 105 q55 -5 85 30 q-45 -20 -85 -30z"/></g>
+<!-- umbrella -->
+<line x1="170" y1="220" x2="190" y2="120" stroke="#5a3a1a" stroke-width="5"/>
+<path d="M110 128 Q190 60 270 112 Z" fill="#ff6b5a"/><path d="M150 112 Q190 70 230 120 L190 120z" fill="#fff" opacity=".6"/>
+<!-- plane -->
+<g transform="translate(360 50) rotate(-8)" fill="#fff"><path d="M0 10 L60 6 L80 0 L84 6 L64 14 L0 16z"/><path d="M28 10 L44 -10 L50 -10 L42 10z"/><path d="M28 14 L44 30 L50 30 L42 14z"/></g>
+<g transform="translate(36 34)"><rect width="196" height="46" rx="23" fill="#fff"/><text x="98" y="31" text-anchor="middle" font-size="20" font-weight="800" fill="#1f6f5c">Op naar de zon!</text></g>
+</svg>

@@ -6,22 +6,25 @@
 <!-- Fictional brand and content, made for Raam's App Store demos. -->
 <title>Smulhuis</title>
 <link rel="stylesheet" href="demo.css">
-<style>:root { --brand: #e8572a; --soft: #fde9e1; }</style>
+<style>:root { --brand: #e8572a; --brand2: #f38a3c; --soft: #fde9e1; --glow: rgba(232,87,42,.35); }</style>
 </head>
 <body>
-<div class="bar"><div class="logo">S</div><div><h1>Smulhuis</h1><small>Bezorging in 25–35 min · Gratis vanaf € 20</small></div></div>
+<div class="bar"><span class="ib"><svg class="i" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></span><div class="logo">S</div><div><h1>Smulhuis</h1><small>Bezorging in 25–35 min · Gratis vanaf € 20</small></div><div class="acts"><span class="ib"><svg class="i" viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg></span></div></div>
 <div class="tabs"><span>Populair</span><span>Hoofdgerechten</span><span>Bijgerechten</span><span>Desserts</span><span>Dranken</span></div>
 <div class="wrap">
-<div class="card warn"><h2>Vandaag 15% korting</h2><p>Bestel vóór 18:00 uur en ontvang korting op alle hoofdgerechten. Niet geldig in combinatie met andere acties.</p></div>
+<div class="banner"><img src="img/smulhuis-hero.svg" alt="Hollandse klassiekers, 15% korting tot 18:00"></div>
+<div class="card"><div class="row"><div><div class="stars">★★★★★<span>4,8 · 1.240 reviews</span></div><div class="desc">Hollands · Comfortfood · Huisgemaakt</div></div><span class="pill">🛵 € 1,95</span></div></div>
+<div class="alert"><div class="ico">🏷️</div><div><h2>Vandaag 15% korting</h2><p>Bestel vóór 18:00 uur en ontvang korting op alle hoofdgerechten. Niet geldig in combinatie met andere acties.</p></div></div>
+<div class="sec">🔥 Populair</div>
 <div class="card">
-<div class="row"><div class="tile">🍲</div><div style="flex:1"><div class="item">Erwtensoep met rookworst</div><div class="desc">Huisgemaakte snert, geserveerd met roggebrood en spek</div></div><div class="price">€ 8,50</div></div>
-<div class="row"><div class="tile">🥔</div><div style="flex:1"><div class="item">Stamppot boerenkool</div><div class="desc">Met jus, gehaktbal en een snufje nootmuskaat</div></div><div class="price">€ 13,95</div></div>
-<div class="row"><div class="tile">🐟</div><div style="flex:1"><div class="item">Kibbeling met remoulade</div><div class="desc">Krokant gebakken kabeljauw, bevat vis en ei</div></div><div class="price">€ 11,25</div></div>
-<div class="row"><div class="tile">🥞</div><div style="flex:1"><div class="item">Poffertjes</div><div class="desc">Twaalf stuks met boter en poedersuiker</div></div><div class="price">€ 6,00</div></div>
-<div class="row"><div class="tile">🍰</div><div style="flex:1"><div class="item">Appeltaart met slagroom</div><div class="desc">Ouderwets recept, rijkelijk gevuld met kaneel</div></div><div class="price">€ 4,75</div></div>
+<div class="dish"><div class="thumb" style="--g:linear-gradient(135deg,#e5f0c8,#b9d47a)"><em>Top</em>🍲</div><div class="grow"><div class="item">Erwtensoep met rookworst</div><div class="desc">Huisgemaakte snert, geserveerd met roggebrood en spek</div><div class="foot"><span class="price">€ 8,50</span><span class="add">+</span></div></div></div>
+<div class="dish"><div class="thumb" style="--g:linear-gradient(135deg,#fff1c9,#f2c46b)">🥔</div><div class="grow"><div class="item">Stamppot boerenkool</div><div class="desc">Met jus, gehaktbal en een snufje nootmuskaat</div><div class="foot"><span class="price">€ 13,95</span><span class="add">+</span></div></div></div>
+<div class="dish"><div class="thumb" style="--g:linear-gradient(135deg,#d8ecff,#8fc0ef)">🐟</div><div class="grow"><div class="item">Kibbeling met remoulade</div><div class="desc">Krokant gebakken kabeljauw, bevat vis en ei</div><div class="foot"><span class="price">€ 11,25</span><span class="add">+</span></div></div></div>
+<div class="dish"><div class="thumb" style="--g:linear-gradient(135deg,#ffe4ec,#f5a8c0)"><em>Nieuw</em>🥞</div><div class="grow"><div class="item">Poffertjes</div><div class="desc">Twaalf stuks met boter en poedersuiker</div><div class="foot"><span class="price">€ 6,00</span><span class="add">+</span></div></div></div>
+<div class="dish"><div class="thumb" style="--g:linear-gradient(135deg,#f6e3cf,#d9a774)">🍰</div><div class="grow"><div class="item">Appeltaart met slagroom</div><div class="desc">Ouderwets recept, rijkelijk gevuld met kaneel</div><div class="foot"><span class="price">€ 4,75</span><span class="add">+</span></div></div></div>
 </div>
-<div class="card"><h2>Allergieën?</h2><p>Laat het ons weten bij je bestelling. Wij kunnen niet garanderen dat gerechten vrij zijn van sporen van noten of gluten.</p></div>
-<a class="btn">Bekijk winkelmandje · € 26,70</a>
+<div class="alert" style="background:#fff4d6"><div class="ico">🥜</div><div><h2 style="color:#9a6a00">Allergieën?</h2><p>Laat het ons weten bij je bestelling. Wij kunnen niet garanderen dat gerechten vrij zijn van sporen van noten of gluten.</p></div></div>
 </div>
+<div class="dock"><div class="cartbar"><div class="bag"><svg class="i" viewBox="0 0 24 24"><path d="M6 7h12l1 13H5z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><b>3</b></div><div class="grow">Gratis bezorging<strong>€ 26,70</strong></div><a>Bekijk winkelmandje</a></div></div>
 </body>
 </html>

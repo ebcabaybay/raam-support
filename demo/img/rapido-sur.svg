@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" font-family="-apple-system, Helvetica Neue, Arial, sans-serif">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8b4fc7"/><stop offset=".65" stop-color="#e98a9b"/><stop offset="1" stop-color="#ffcf8a"/></linearGradient>
+<linearGradient id="train" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dcd6e6"/></linearGradient>
+</defs>
+<rect width="720" height="320" fill="url(#sky)"/>
+<circle cx="560" cy="170" r="54" fill="#ffe3a3"/>
+<path d="M0 220 L90 150 L170 200 L270 120 L380 205 L470 160 L560 210 L650 150 L720 190 V320 H0z" fill="#5b2a86" opacity=".55"/>
+<path d="M0 250 Q180 200 360 240 T720 230 V320 H0z" fill="#3e1d63"/>
+<!-- olive trees -->
+<g fill="#2b1446"><circle cx="70" cy="236" r="16"/><rect x="68" y="240" width="4" height="18"/><circle cx="640" cy="232" r="14"/><rect x="638" y="236" width="4" height="16"/></g>
+<!-- track -->
+<rect x="0" y="282" width="720" height="8" fill="#2b1446"/>
+<g fill="#2b1446" opacity=".6"><rect x="10" y="290" width="40" height="5"/><rect x="80" y="290" width="40" height="5"/><rect x="150" y="290" width="40" height="5"/><rect x="220" y="290" width="40" height="5"/><rect x="290" y="290" width="40" height="5"/><rect x="360" y="290" width="40" height="5"/><rect x="430" y="290" width="40" height="5"/><rect x="500" y="290" width="40" height="5"/><rect x="570" y="290" width="40" height="5"/><rect x="640" y="290" width="40" height="5"/></g>
+<!-- train -->
+<g>
+<path d="M150 230 H600 Q680 230 700 270 L705 280 H150z" fill="url(#train)"/>
+<path d="M150 262 H703 V270 H150z" fill="#6b2fa3"/>
+<path d="M610 238 Q660 240 682 262 H610z" fill="#2b1446"/>
+<g fill="#2b1446"><rect x="170" y="240" width="46" height="16" rx="4"/><rect x="230" y="240" width="46" height="16" rx="4"/><rect x="290" y="240" width="46" height="16" rx="4"/><rect x="380" y="240" width="46" height="16" rx="4"/><rect x="440" y="240" width="46" height="16" rx="4"/><rect x="500" y="240" width="46" height="16" rx="4"/></g>
+<line x1="356" y1="232" x2="356" y2="280" stroke="#b9b0c8" stroke-width="2"/>
+<text x="560" y="276" font-size="9" font-weight="800" fill="#fff">RÁPIDO SUR</text>
+</g>
+<!-- station sign -->
+<g transform="translate(36 34)">
+<rect x="70" y="58" width="6" height="150" fill="#2b1446"/><rect x="190" y="58" width="6" height="150" fill="#2b1446"/>
+<rect width="270" height="66" rx="10" fill="#1d1d2b"/>
+<text x="16" y="26" font-size="14" font-weight="700" fill="#ffcf4a">SALIDAS</text>
+<text x="254" y="26" text-anchor="end" font-size="14" font-weight="700" fill="#ffcf4a">ANDÉN</text>
+<text x="16" y="52" font-size="20" font-weight="700" fill="#fff" font-family="Menlo, monospace">09:15 Puerto Alto</text>
+<text x="254" y="52" text-anchor="end" font-size="22" font-weight="800" fill="#ffcf4a" font-family="Menlo, monospace">4</text>
+</g>
+<g transform="translate(440 30)"><rect width="240" height="40" rx="20" fill="#fff" opacity=".9"/><text x="120" y="27" text-anchor="middle" font-size="17" font-weight="700" fill="#6b2fa3">Valle Claro → Puerto Alto</text></g>
+</svg>
