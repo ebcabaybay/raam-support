@@ -1,34 +1,34 @@
 {
- "id": "/raam-support/demo/ja-shop/",
+ "id": "/raam-support/demo/ja-shop.html",
  "name": "こもれび雑貨",
  "short_name": "こもれび雑貨",
  "lang": "ja",
- "start_url": "./",
- "scope": "./",
+ "start_url": "ja-shop.html",
+ "scope": "ja-shop.html",
  "display": "standalone",
  "theme_color": "#7a5c3e",
  "background_color": "#faf7f2",
  "icons": [
   {
-   "src": "../icons/ja-shop-192.png",
+   "src": "icons/ja-shop-192.png",
    "sizes": "192x192",
    "type": "image/png",
    "purpose": "any"
   },
   {
-   "src": "../icons/ja-shop-192.png",
+   "src": "icons/ja-shop-192.png",
    "sizes": "192x192",
    "type": "image/png",
    "purpose": "maskable"
   },
   {
-   "src": "../icons/ja-shop-512.png",
+   "src": "icons/ja-shop-512.png",
    "sizes": "512x512",
    "type": "image/png",
    "purpose": "any"
   },
   {
-   "src": "../icons/ja-shop-512.png",
+   "src": "icons/ja-shop-512.png",
    "sizes": "512x512",
    "type": "image/png",
    "purpose": "maskable"
