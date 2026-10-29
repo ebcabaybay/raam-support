@@ -4,7 +4,7 @@
  "short_name": "Raam demos",
  "lang": "en",
  "start_url": "./index.html",
- "scope": "./",
+ "scope": "./index.html",
  "display": "standalone",
  "theme_color": "#ff00ff",
  "background_color": "#f4f4f6",
