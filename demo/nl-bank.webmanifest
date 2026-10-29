@@ -1,0 +1,37 @@
+{
+ "id": "./nl-bank.html",
+ "name": "Spaarvogel",
+ "short_name": "Spaarvogel",
+ "lang": "nl",
+ "start_url": "./nl-bank.html",
+ "scope": "./nl-bank.html",
+ "display": "standalone",
+ "theme_color": "#1f6f5c",
+ "background_color": "#f2f6f5",
+ "icons": [
+  {
+   "src": "icons/nl-bank-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icons/nl-bank-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "icons/nl-bank-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icons/nl-bank-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
