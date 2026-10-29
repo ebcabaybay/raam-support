@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raam for iPhone</title>
+<meta name="description" content="Live, in-place translation of any app on your iPhone. Join the beta on TestFlight.">
+<meta property="og:title" content="Raam for iPhone">
+<meta property="og:description" content="Live, in-place translation of any app on your iPhone. Join the beta on TestFlight.">
+<meta property="og:image" content="https://ebcabaybay.github.io/raam-support/media/preview-1-light.jpg">
+<link rel="icon" href="icon.png"><link rel="stylesheet" href="style.css">
+</head>
+<body><main class="wide">
+<header><img src="icon.png" alt=""><a href="./">Raam</a></header>
+
+<section class="hero">
+<h1>Raam for iPhone</h1>
+<p class="lead">Start a broadcast, and Raam pops out in Picture in Picture to read over any app, swapping its words for your language right where they are.</p>
+<div class="cta">
+<a class="button" href="https://testflight.apple.com/join/w9NWPyXj">Join the beta on TestFlight</a>
+<a class="secondary" href="https://apps.apple.com/app/id6815025001">Raam on the App Store</a>
+</div>
+</section>
+
+<section class="previews" aria-label="App previews">
+<figure>
+<video src="media/preview-1-light.mp4" poster="media/preview-1-light.jpg" data-theme-media="media/preview-1" autoplay muted loop playsinline preload="metadata"></video>
+<figcaption><strong>Translate any app.</strong> Dutch letters and menus, in English, right where they are.</figcaption>
+</figure>
+<figure>
+<video src="media/preview-2-light.mp4" poster="media/preview-2-light.jpg" data-theme-media="media/preview-2" autoplay muted loop playsinline preload="metadata"></video>
+<figcaption><strong>How it works.</strong> Start a broadcast, and Raam pops out to read over any app.</figcaption>
+</figure>
+<figure>
+<video src="media/preview-3-light.mp4" poster="media/preview-3-light.jpg" data-theme-media="media/preview-3" autoplay muted loop playsinline preload="metadata"></video>
+<figcaption><strong>Languages and character.</strong> Spanish, Chinese and Japanese too, and he gets dizzy if you rush him.</figcaption>
+</figure>
+</section>
+<script>
+// The previews come in light and dark, like the page; show the one that matches.
+(() => {
+  const dark = matchMedia("(prefers-color-scheme: dark)");
+  const apply = () => document.querySelectorAll("video[data-theme-media]").forEach(video => {
+    const base = `${video.dataset.themeMedia}-${dark.matches ? "dark" : "light"}`;
+    if (video.getAttribute("src") === `${base}.mp4`) return;
+    video.poster = `${base}.jpg`;
+    video.src = `${base}.mp4`;
+    video.play().catch(() => {});
+  });
+  apply();
+  dark.addEventListener("change", apply);
+})();
+</script>
+
+<section class="demo">
+<h2>See the whole thing</h2>
+<p>A full, unedited walk-through: starting Raam, reading a Dutch letter and menu, picking languages, and translating Spanish, Japanese and Chinese apps.</p>
+<video src="media/demo.mp4" poster="media/demo.jpg" controls playsinline preload="none"></video>
+</section>
+
+<section class="beta" id="beta">
+<h2>Beta testing</h2>
+<p>Use Raam on the apps you actually read, and tell us what he gets wrong at <a href="mailto:raam.support@icloud.com">raam.support@icloud.com</a>.</p>
+<div class="beta-single">
+<div class="card">
+<h3>iPhone, via TestFlight</h3>
+<ol>
+<li>Open <a href="https://testflight.apple.com/join/w9NWPyXj">the TestFlight invite</a> on your iPhone.</li>
+<li>Install Apple's TestFlight app if asked.</li>
+<li>Tap <em>Accept</em>, then <em>Install</em>.</li>
+</ol>
+<p class="fine">Purchases in TestFlight are free, so you can try Raam Unlimited too.</p>
+<a class="button" href="https://testflight.apple.com/join/w9NWPyXj">Join the iPhone beta</a>
+</div>
+</div>
+</section>
+
+<section class="icons">
+<h2>A new pose for every build</h2>
+<p>Each version of Raam draws its own icon, so no two builds look alike. Here's every pose he's struck so far.</p>
+<div class="icon-grid">
+<figure><img src="media/icons/build-20.png" alt="Raam app icon for build 20" width="120" height="120" loading="lazy"><figcaption>Build 20</figcaption></figure>
+<figure><img src="media/icons/build-19.png" alt="Raam app icon for build 19" width="120" height="120" loading="lazy"><figcaption>Build 19</figcaption></figure>
+<figure><img src="media/icons/build-18.png" alt="Raam app icon for build 18" width="120" height="120" loading="lazy"><figcaption>Build 18</figcaption></figure>
+<figure><img src="media/icons/build-17.png" alt="Raam app icon for build 17" width="120" height="120" loading="lazy"><figcaption>Build 17</figcaption></figure>
+<figure><img src="media/icons/build-16.png" alt="Raam app icon for build 16" width="120" height="120" loading="lazy"><figcaption>Build 16</figcaption></figure>
+<figure><img src="media/icons/build-15.png" alt="Raam app icon for build 15" width="120" height="120" loading="lazy"><figcaption>Build 15</figcaption></figure>
+<figure><img src="media/icons/build-14.png" alt="Raam app icon for build 14" width="120" height="120" loading="lazy"><figcaption>Build 14</figcaption></figure>
+<figure><img src="media/icons/build-13.png" alt="Raam app icon for build 13" width="120" height="120" loading="lazy"><figcaption>Build 13</figcaption></figure>
+<figure><img src="media/icons/build-12.png" alt="Raam app icon for build 12" width="120" height="120" loading="lazy"><figcaption>Build 12</figcaption></figure>
+<figure><img src="media/icons/build-11.png" alt="Raam app icon for build 11" width="120" height="120" loading="lazy"><figcaption>Build 11</figcaption></figure>
+<figure><img src="media/icons/build-9.png" alt="Raam app icon for build 9" width="120" height="120" loading="lazy"><figcaption>Build 9</figcaption></figure>
+<figure><img src="media/icons/build-8.png" alt="Raam app icon for build 8" width="120" height="120" loading="lazy"><figcaption>Build 8</figcaption></figure>
+<figure><img src="media/icons/build-7.png" alt="Raam app icon for build 7" width="120" height="120" loading="lazy"><figcaption>Build 7</figcaption></figure>
+<figure><img src="media/icons/build-6.png" alt="Raam app icon for build 6" width="120" height="120" loading="lazy"><figcaption>Build 6</figcaption></figure>
+<figure><img src="media/icons/build-5.png" alt="Raam app icon for build 5" width="120" height="120" loading="lazy"><figcaption>Build 5</figcaption></figure>
+<figure><img src="media/icons/build-4.png" alt="Raam app icon for build 4" width="120" height="120" loading="lazy"><figcaption>Build 4</figcaption></figure>
+</div>
+</section>
+
+<nav><a href="./">Home</a><a href="iphone.html">iPhone</a><a href="android.html">Android</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a></nav>
+</main></body>
+</html>
