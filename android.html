@@ -33,9 +33,8 @@
 </div>
 </section>
 
-<dialog class="shot-dialog" aria-label="Screenshot preview">
-<button class="shot-dialog-close" type="button" aria-label="Close screenshot">Close</button>
-<img class="shot-dialog-image" alt="">
+<dialog class="shot-dialog" aria-label="Screenshot preview. Click anywhere or press Escape to close.">
+<img alt="">
 </dialog>
 <script>
 const shotDialog = document.querySelector(".shot-dialog");
@@ -43,15 +42,13 @@ const shotPreview = shotDialog.querySelector("img");
 document.querySelectorAll(".shots .shot").forEach(button => {
   button.addEventListener("click", () => {
     const thumbnail = button.querySelector("img");
-    shotPreview.src = thumbnail.currentSrc;
+    shotPreview.src = thumbnail.currentSrc.replace(/\.jpg$/, "-full.jpg");
     shotPreview.alt = thumbnail.alt;
     shotDialog.showModal();
   });
 });
-shotDialog.querySelector(".shot-dialog-close").addEventListener("click", () => shotDialog.close());
-shotDialog.addEventListener("click", event => {
-  if (event.target === shotDialog) shotDialog.close();
-});
+shotDialog.addEventListener("click", () => shotDialog.close());
+shotDialog.addEventListener("close", () => shotPreview.removeAttribute("src"));
 </script>
 
 <section class="beta" id="beta">
