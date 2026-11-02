@@ -23,14 +23,36 @@
 <section class="android-media">
 <video src="media/android/promo.mp4" poster="media/android/promo.jpg" controls playsinline preload="none"></video>
 <div class="shots">
-<picture><source srcset="media/android/01-dutch-letter-dark.jpg" media="(prefers-color-scheme: dark)"><img src="media/android/01-dutch-letter-light.jpg" alt="Dutch on screen, English at a glance." width="540" height="960" loading="lazy"></picture>
-<picture><source srcset="media/android/02-japanese-shop-dark.jpg" media="(prefers-color-scheme: dark)"><img src="media/android/02-japanese-shop-light.jpg" alt="Japanese shops, read in English." width="540" height="960" loading="lazy"></picture>
-<picture><source srcset="media/android/03-lens-bank-dark.jpg" media="(prefers-color-scheme: dark)"><img src="media/android/03-lens-bank-light.jpg" alt="Raam's lens over a Dutch banking app." width="540" height="960" loading="lazy"></picture>
-<picture><source srcset="media/android/04-chinese-menu-dark.jpg" media="(prefers-color-scheme: dark)"><img src="media/android/04-chinese-menu-light.jpg" alt="A Chinese menu, translated in place." width="540" height="960" loading="lazy"></picture>
-<picture><source srcset="media/android/05-spanish-ticket-dark.jpg" media="(prefers-color-scheme: dark)"><img src="media/android/05-spanish-ticket-light.jpg" alt="A Spanish train ticket, in English." width="540" height="960" loading="lazy"></picture>
-<picture><source srcset="media/android/06-home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="media/android/06-home-light.jpg" alt="Raam's home screen on Android." width="540" height="960" loading="lazy"></picture>
+<button class="shot" type="button" aria-label="Enlarge Dutch on screen, English at a glance."><picture><source srcset="media/android/01-dutch-letter-dark.jpg" media="(prefers-color-scheme: dark)"><img src="media/android/01-dutch-letter-light.jpg" alt="Dutch on screen, English at a glance." width="540" height="960" loading="lazy"></picture></button>
+<button class="shot" type="button" aria-label="Enlarge Japanese shops, read in English."><picture><source srcset="media/android/02-japanese-shop-dark.jpg" media="(prefers-color-scheme: dark)"><img src="media/android/02-japanese-shop-light.jpg" alt="Japanese shops, read in English." width="540" height="960" loading="lazy"></picture></button>
+<button class="shot" type="button" aria-label="Enlarge Raam's lens over a Dutch banking app."><picture><source srcset="media/android/03-lens-bank-dark.jpg" media="(prefers-color-scheme: dark)"><img src="media/android/03-lens-bank-light.jpg" alt="Raam's lens over a Dutch banking app." width="540" height="960" loading="lazy"></picture></button>
+<button class="shot" type="button" aria-label="Enlarge a Chinese menu, translated in place."><picture><source srcset="media/android/04-chinese-menu-dark.jpg" media="(prefers-color-scheme: dark)"><img src="media/android/04-chinese-menu-light.jpg" alt="A Chinese menu, translated in place." width="540" height="960" loading="lazy"></picture></button>
+<button class="shot" type="button" aria-label="Enlarge a Spanish train ticket, in English."><picture><source srcset="media/android/05-spanish-ticket-dark.jpg" media="(prefers-color-scheme: dark)"><img src="media/android/05-spanish-ticket-light.jpg" alt="A Spanish train ticket, in English." width="540" height="960" loading="lazy"></picture></button>
+<button class="shot" type="button" aria-label="Enlarge Raam's home screen on Android."><picture><source srcset="media/android/06-home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="media/android/06-home-light.jpg" alt="Raam's home screen on Android." width="540" height="960" loading="lazy"></picture></button>
+<button class="shot" type="button" aria-label="Enlarge the privacy and offline processing screenshot."><picture><source srcset="media/android/07-privacy-dark.jpg" media="(prefers-color-scheme: dark)"><img src="media/android/07-privacy-light.jpg" alt="Your screen, your business. On-device recognition and translation, no screen uploads or cloud processing. Download language packs once, then translate offline." width="540" height="960" loading="lazy"></picture></button>
 </div>
 </section>
+
+<dialog class="shot-dialog" aria-label="Screenshot preview">
+<button class="shot-dialog-close" type="button" aria-label="Close screenshot">Close</button>
+<img class="shot-dialog-image" alt="">
+</dialog>
+<script>
+const shotDialog = document.querySelector(".shot-dialog");
+const shotPreview = shotDialog.querySelector("img");
+document.querySelectorAll(".shots .shot").forEach(button => {
+  button.addEventListener("click", () => {
+    const thumbnail = button.querySelector("img");
+    shotPreview.src = thumbnail.currentSrc;
+    shotPreview.alt = thumbnail.alt;
+    shotDialog.showModal();
+  });
+});
+shotDialog.querySelector(".shot-dialog-close").addEventListener("click", () => shotDialog.close());
+shotDialog.addEventListener("click", event => {
+  if (event.target === shotDialog) shotDialog.close();
+});
+</script>
 
 <section class="beta" id="beta">
 <h2>Beta testing</h2>
