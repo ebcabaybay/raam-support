@@ -14,7 +14,7 @@ p, li { color: var(--soft); font-size: 17px; }
 a { color: var(--raam); }
 .card { background: var(--card); border-radius: 20px; padding: 20px 24px; margin: 20px 0; }
 .lead { font-size: 20px; color: var(--ink); }
-nav { margin-top: 48px; display: flex; gap: 20px; font-size: 15px; }
+nav { margin-top: 48px; display: flex; flex-wrap: wrap; gap: 20px; font-size: 15px; }
 @font-face { font-family: Fredoka; src: url(fonts/Fredoka-Bold.ttf); font-weight: 700; }
 main.wide { max-width: 1040px; }
 .hero { max-width: 720px; }
